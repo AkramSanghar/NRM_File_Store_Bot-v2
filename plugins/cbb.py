@@ -15,7 +15,7 @@ async def cb_handler(client: Bot, query: CallbackQuery):
             reply_markup = InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("🧑‍💻 Developer 🤖", url="https://t.me/xo_code"),
+                        pyrogram.types.InlineKeyboardButton(text='Developer', user_id=5027042400),
                         InlineKeyboardButton("🔒 Close", callback_data = "close")
                     ]
                 ]
